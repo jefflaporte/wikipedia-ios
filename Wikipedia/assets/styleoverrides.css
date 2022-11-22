@@ -58,6 +58,13 @@ a:hover {
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    /* Prevent images with black text on dark backround when dark mode active */
+    img.mwe-math-fallback-image-display {
+        filter: invert(100%)
+    }
+}
+
 /* Prevent text size increase on landscape on non-iPads: T233254 and https://stackoverflow.com/a/2711132 */
 /* Override body font to prevent issues for arabic wiki: T307407 */
 body {
